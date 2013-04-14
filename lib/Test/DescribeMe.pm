@@ -73,7 +73,7 @@ if you set explicit plans or tests will break!
 
 Example:
 
-  use Test::DescribeMe qw(smoker);
+  use Test::DescribeMe qw(smoke);
   use Test::More tests => 5;
 
 (Although you probably want L<Test::More/done_testing> without explicit plans).
