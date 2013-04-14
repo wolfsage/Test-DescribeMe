@@ -125,7 +125,7 @@ problem with this is install tools want to say "Run all tests but don't prompt
 the user" and the only way to do that is with B<AUTOMATED_TESTING>, and so they 
 end up running the long running tests and wasting time.
 
-In order to support this, B<AUTOMATED>TESTING> will once again mean 
+In order to support this, B<AUTOMATED_TESTING> will once again mean 
 "I am a smoker running these tests" and two new environmental variables 
 B<EXTENDED_TESTING> and B<NON_INTERACTIVE> will handle the two other cases.
 
