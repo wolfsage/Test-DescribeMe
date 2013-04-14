@@ -108,6 +108,11 @@ ensure a build is insane.
 
 =back
 
+=head2 More Control
+
+If this doesn't provide the control you're looking for - for example, NOT 
+running a test if on a smoker, see L<Test::Settings>.
+
 =head1 BACKGROUND
 
 With the Lancaster Consensus at the Perl QA Hackathon 2013, a 'new' system has 
