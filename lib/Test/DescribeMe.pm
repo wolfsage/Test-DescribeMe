@@ -125,11 +125,16 @@ problem with this is install tools want to say "Run all tests but don't prompt
 the user" and the only way to do that is with B<AUTOMATED_TESTING>, and so they 
 end up running the long running tests and wasting time.
 
-In order to support this, B<AUTOMATED_TESTING> will once again mean 
+In order to support the other behaviors, B<AUTOMATED_TESTING> will once again mean 
 "I am a smoker running these tests" and two new environmental variables 
 B<EXTENDED_TESTING> and B<NON_INTERACTIVE> will handle the two other cases.
 
-B<EXTENDED_TESTING> is for tests that want 
+B<EXTENDED_TESTING> is for tests that may take a long time or require special 
+configuration that is too complex for typical intalls - like requiring other 
+software for testing or internet connections.
+
+B<NON_INTERACTIVE> can be used by a build system like L<App::cpanminus> to say 
+don't run tests that require user interaction.
 
 =head1 SEE ALSO
 
